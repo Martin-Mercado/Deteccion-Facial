@@ -65,7 +65,7 @@ namespace DeteccionFacial
                 //diujar un rectangulo ale rededor de la cara actual
                 CvInvoke.Rectangle(currentFrame, face, new Bgr(Color.Green).MCvScalar, 2);
 
-                //Agregar persona
+ 
                 //asignar la cara detectada a la picture box PicDetected
                 Image<Bgr, Byte> resultImage = currentFrame.Convert<Bgr, Byte>();
                 resultImage.ROI = face;
